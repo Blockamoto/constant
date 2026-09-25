@@ -39,7 +39,10 @@
           <p class="eyebrow">Company operating system</p>
           <h1 id="viewTitle">Overview</h1>
         </div>
-        <div class="phase"><span>Phase</span><strong id="phase">Bootstrap</strong></div>
+        <div class="top-actions">
+          <div class="phase"><span>Phase</span><strong id="phase">Bootstrap</strong></div>
+          <button id="logoutButton" class="logout-button" type="button">Sign out</button>
+        </div>
       </header>
 
       <section id="overview" class="view active">
@@ -70,16 +73,16 @@
           <article class="panel">
             <div class="panel-head">
               <span>Operating model</span>
-              <span class="tag">v0.1</span>
+              <span class="tag">v0.2</span>
             </div>
             <p>GitHub is the durable source of operational truth. The dashboard is the readable surface. Scheduled agents become workers, but every consequential action leaves an audit trail.</p>
           </article>
           <article class="panel">
             <div class="panel-head">
               <span>Safety boundary</span>
-              <span class="tag">Public repo</span>
+              <span class="tag">Authenticated</span>
             </div>
-            <p>Passwords, tax records, bank data, private documents and personal identifiers do not belong in source control. The engine tracks status without publishing secrets.</p>
+            <p>The Render service is password-gated. Passwords, keys and future decryption material stay in Render environment variables rather than source control.</p>
           </article>
         </div>
       </section>
@@ -113,7 +116,7 @@
         <div class="empty-state">
           <span class="big-glyph">£</span>
           <h2>Finance module is deliberately empty.</h2>
-          <p>Next, this becomes the ledger-facing layer for bank feeds, receipts, tax categories, forecasts and filing readiness. Private financial data will live behind an explicit storage boundary, not in this public repository.</p>
+          <p>Next, this becomes the ledger-facing layer for bank feeds, receipts, tax categories, forecasts and filing readiness. Private financial data will sit behind an explicit encrypted storage boundary rather than being published as repository plaintext.</p>
         </div>
       </section>
 
