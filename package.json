@@ -1,0 +1,14 @@
+{
+  "name": "constant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Operating system for Constant Limited",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
