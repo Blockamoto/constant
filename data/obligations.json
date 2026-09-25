@@ -1,0 +1,45 @@
+{
+  "updated": "2026-09-25",
+  "items": [
+    {
+      "id": "identity",
+      "category": "Company",
+      "label": "Company identity and official identifiers",
+      "status": "needs_input",
+      "due": null,
+      "note": "Populate only from authoritative records. Do not guess registration data."
+    },
+    {
+      "id": "duns",
+      "category": "Company",
+      "label": "D-U-N-S application",
+      "status": "queued",
+      "due": null,
+      "note": "Track application, evidence requested, and completion."
+    },
+    {
+      "id": "accounts",
+      "category": "Compliance",
+      "label": "Annual accounts",
+      "status": "awaiting_dates",
+      "due": null,
+      "note": "Due date should be derived from confirmed Companies House data."
+    },
+    {
+      "id": "confirmation",
+      "category": "Compliance",
+      "label": "Confirmation statement",
+      "status": "awaiting_dates",
+      "due": null,
+      "note": "Due date should be derived from confirmed Companies House data."
+    },
+    {
+      "id": "corporation-tax",
+      "category": "Tax",
+      "label": "Corporation Tax workflow",
+      "status": "not_configured",
+      "due": null,
+      "note": "Connect accounting records and HMRC obligations before enabling automated reminders."
+    }
+  ]
+}
