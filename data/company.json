@@ -1,0 +1,35 @@
+{
+  "name": "Constant Limited",
+  "jurisdiction": "United Kingdom",
+  "phase": "Bootstrap",
+  "updated": "2026-09-25",
+  "principle": "Automate the routine. Keep decisions legible.",
+  "milestones": [
+    {
+      "id": "company-record",
+      "label": "Establish company operating record",
+      "status": "in_progress",
+      "note": "Create the durable company control surface before layering integrations onto it."
+    },
+    {
+      "id": "duns",
+      "label": "Obtain D-U-N-S number",
+      "status": "queued",
+      "note": "Required for the intended organisation account setup."
+    },
+    {
+      "id": "play-console",
+      "label": "Create organisation Play Console account",
+      "status": "blocked",
+      "blockedBy": "duns",
+      "note": "Public app publishing should sit under Constant rather than an individual's store identity."
+    },
+    {
+      "id": "proximity",
+      "label": "Ship Proximity through Constant",
+      "status": "blocked",
+      "blockedBy": "play-console",
+      "note": "First operating product milestone."
+    }
+  ]
+}
