@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#11110f" />
+  <title>Constant · Sign in</title>
+  <link rel="stylesheet" href="/login.css" />
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="mark" aria-hidden="true">C</div>
+
+      <div class="copy">
+        <p class="eyebrow">Constant Limited</p>
+        <h1 id="login-title">Company access</h1>
+        <p>This dashboard is private. Enter the admin password configured in Render.</p>
+      </div>
+
+      <form id="loginForm">
+        <label for="password">Admin password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          autocomplete="current-password"
+          minlength="12"
+          required
+          autofocus
+        />
+        <button type="submit">Enter Constant</button>
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+      </form>
+
+      <footer>
+        <span>Protected session</span>
+        <span>No password is stored in the browser.</span>
+      </footer>
+    </section>
+  </main>
+
+  <script type="module" src="/login.js"></script>
+</body>
+</html>
