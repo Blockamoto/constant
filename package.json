@@ -6,7 +6,7 @@
   "description": "Operating system for Constant Limited",
   "scripts": {
     "start": "node server.mjs",
-    "test": "node scripts/check.mjs"
+    "test": "node --check server.mjs && node --check public/app.js && node --check public/login.js && node scripts/check.mjs"
   },
   "engines": {
     "node": ">=22"
