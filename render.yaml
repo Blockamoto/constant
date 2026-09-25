@@ -5,5 +5,12 @@ services:
     plan: free
     buildCommand: npm test
     startCommand: npm start
-    healthCheckPath: /api/status
+    healthCheckPath: /healthz
     autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CONSTANT_ADMIN_PASSWORD
+        sync: false
+      - key: CONSTANT_SESSION_SECRET
+        generateValue: true
