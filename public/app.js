@@ -13,6 +13,15 @@ qsa(".nav").forEach((button) => {
   });
 });
 
+qs("#logoutButton")?.addEventListener("click", async () => {
+  qs("#logoutButton").disabled = true;
+  try {
+    await fetch("/api/logout", { method: "POST" });
+  } finally {
+    location.assign("/login");
+  }
+});
+
 function statusLabel(value) {
   return value.replaceAll("_", " ");
 }
@@ -41,11 +50,20 @@ function obligationCard(item) {
   `;
 }
 
+async function checkedFetch(path) {
+  const response = await fetch(path);
+  if (response.status === 401) {
+    location.assign("/login");
+    throw new Error("Session expired");
+  }
+  return response;
+}
+
 async function load() {
   const [statusRes, companyRes, obligationsRes] = await Promise.all([
-    fetch("/api/status"),
-    fetch("/api/company"),
-    fetch("/api/obligations")
+    checkedFetch("/api/status"),
+    checkedFetch("/api/company"),
+    checkedFetch("/api/obligations")
   ]);
 
   if (!statusRes.ok || !companyRes.ok || !obligationsRes.ok) {
