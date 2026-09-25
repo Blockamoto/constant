@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#11110f" />
+  <title>Constant</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"><span>C</span></div>
+        <div>
+          <strong>Constant</strong>
+          <small>Limited</small>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <button class="nav active" data-view="overview">Overview</button>
+        <button class="nav" data-view="company">Company</button>
+        <button class="nav" data-view="obligations">Obligations</button>
+        <button class="nav" data-view="finance">Finance</button>
+        <button class="nav" data-view="automations">Automations</button>
+        <button class="nav" data-view="audit">Audit</button>
+      </nav>
+
+      <div class="rail-foot">
+        <span class="live-dot"></span>
+        <span id="serviceState">Checking engine</span>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Company operating system</p>
+          <h1 id="viewTitle">Overview</h1>
+        </div>
+        <div class="phase"><span>Phase</span><strong id="phase">Bootstrap</strong></div>
+      </header>
+
+      <section id="overview" class="view active">
+        <div class="hero">
+          <div>
+            <p class="eyebrow">Current objective</p>
+            <h2>Build the company that can ship the things.</h2>
+            <p id="principle" class="lede">Automate the routine. Keep decisions legible.</p>
+          </div>
+          <div class="hero-orbit" aria-hidden="true">
+            <div class="orbit a"></div>
+            <div class="orbit b"></div>
+            <div class="core">C</div>
+          </div>
+        </div>
+
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Launch chain</p>
+            <h3>Constant → D-U-N-S → Play Console → Proximity</h3>
+          </div>
+          <span class="quiet" id="updated"></span>
+        </div>
+
+        <div id="milestones" class="milestones"></div>
+
+        <div class="grid-two">
+          <article class="panel">
+            <div class="panel-head">
+              <span>Operating model</span>
+              <span class="tag">v0.1</span>
+            </div>
+            <p>GitHub is the durable source of operational truth. The dashboard is the readable surface. Scheduled agents become workers, but every consequential action leaves an audit trail.</p>
+          </article>
+          <article class="panel">
+            <div class="panel-head">
+              <span>Safety boundary</span>
+              <span class="tag">Public repo</span>
+            </div>
+            <p>Passwords, tax records, bank data, private documents and personal identifiers do not belong in source control. The engine tracks status without publishing secrets.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="company" class="view">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Identity</p>
+            <h2>Company record</h2>
+          </div>
+        </div>
+        <div class="detail-grid" id="companyDetails"></div>
+        <article class="panel roomy">
+          <p class="eyebrow">Rule</p>
+          <h3>Authoritative data only</h3>
+          <p>Registration numbers, addresses, filing dates and official identifiers should enter Constant from an authoritative record or a human-confirmed source. Empty is better than invented.</p>
+        </article>
+      </section>
+
+      <section id="obligations" class="view">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Compliance memory</p>
+            <h2>Obligations</h2>
+          </div>
+        </div>
+        <div id="obligationList" class="stack"></div>
+      </section>
+
+      <section id="finance" class="view">
+        <div class="empty-state">
+          <span class="big-glyph">£</span>
+          <h2>Finance module is deliberately empty.</h2>
+          <p>Next, this becomes the ledger-facing layer for bank feeds, receipts, tax categories, forecasts and filing readiness. Private financial data will live behind an explicit storage boundary, not in this public repository.</p>
+        </div>
+      </section>
+
+      <section id="automations" class="view">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Workers</p>
+            <h2>Automations</h2>
+          </div>
+        </div>
+        <div class="stack">
+          <article class="automation-card">
+            <div><span class="status-dot queued"></span><strong>GitHub scheduled capability probe</strong></div>
+            <p>First scheduled pass. Test what the scheduled agent can actually read, write, branch, open, merge and audit.</p>
+            <span class="tag">Queued</span>
+          </article>
+          <article class="automation-card">
+            <div><span class="status-dot"></span><strong>Compliance watcher</strong></div>
+            <p>Future. Check authoritative company deadlines and surface changes before they become surprises.</p>
+            <span class="tag">Not configured</span>
+          </article>
+          <article class="automation-card">
+            <div><span class="status-dot"></span><strong>Finance close</strong></div>
+            <p>Future. Reconcile records, identify missing evidence and report filing readiness.</p>
+            <span class="tag">Not configured</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="audit" class="view">
+        <div class="empty-state">
+          <span class="big-glyph">↳</span>
+          <h2>Nothing hidden behind the curtain.</h2>
+          <p>Scheduled-agent runs will write concise machine-readable and human-readable results into the repository. The first entry will be the GitHub smoke test.</p>
+        </div>
+      </section>
+
+      <footer>
+        <span>Constant Limited</span>
+        <span>Build quietly. Record clearly.</span>
+      </footer>
+    </main>
+  </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
