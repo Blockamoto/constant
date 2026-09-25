@@ -148,8 +148,36 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 24px;
   border-bottom: 1px solid var(--line);
   margin-bottom: 34px;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logout-button {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  border-radius: 999px;
+  color: var(--muted);
+  padding: 7px 11px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  color: var(--ink);
+  background: rgba(255,255,255,.42);
+}
+
+.logout-button:disabled {
+  cursor: wait;
+  opacity: .55;
 }
 
 h1, h2, h3, p { margin-top: 0; }
@@ -480,6 +508,8 @@ footer {
   .topbar { min-height: 72px; }
   h1 { font-size: 34px; }
   .phase { display: none; }
+  .top-actions { gap: 0; }
+  .logout-button { padding: 7px 9px; }
   .hero { min-height: 260px; }
   .milestones, .grid-two, .detail-grid { grid-template-columns: 1fr; }
   .detail { border-right: 0; }
